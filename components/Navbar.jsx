@@ -93,7 +93,7 @@ const Navbar = () => {
                             </div>              
                         </div>
                         <div className='border-b border-gray-300 my-4 text-center'>
-                            <p className="w-[100%] md:w-[90%] py-1 mb-[8px] text-[#1f2397]">Let's build your incredible vision together</p>
+                            <p className="w-[100%] md:w-[90%] py-1 mb-[8px] text-[#1f2397]">Let&apos;s build your incredible vision together</p>
                         </div>
 
                         {/*Menu Content*/}
@@ -127,7 +127,7 @@ const Navbar = () => {
                                                  
                             </ul>
                             <div className='pt-5 border-t border-gray-300 my-4 text-center'>
-                                <p className='uppercase tracking-widest text-[#1f2397]'>Get in touch, and let's connect...</p>
+                                <p className='uppercase tracking-widest text-[#1f2397]'>Get in touch, and let&apos;s connect...</p>
                                 <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                                     <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-300'>
                                         <FaGithub />
