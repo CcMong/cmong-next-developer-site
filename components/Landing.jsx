@@ -17,7 +17,7 @@ const Landing = () => {
                 Hey! I'm <span className='text-[#602e9e]'><Link href="#about">Charles Mong</Link></span>,
               </h1>
               <h1 className='text-gray-600 pb-4'>
-                A Front-End Web Developer 
+                A Front-End Web Developer
               </h1>
               <p className='py-4 -tracking-wide text-gray-600 max-w-[80%] m-auto border-t-2 '>
               I help businesses to build powerful, responsive front-end web applications that deliver outstanding user experiences. I am passionate about turning vision into impactful digital assets that add value, and solve problems creatively. 
