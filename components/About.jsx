@@ -26,6 +26,7 @@ const About = () => {
                 src="/../public/assets/about-me-mugshot2.jpeg"
                 width={300} height={50}
                 className="rounded-xl"
+                alt="C. Mong portrait"
                 />
         
             </div>

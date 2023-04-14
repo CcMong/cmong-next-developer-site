@@ -52,7 +52,10 @@ const Navbar = () => {
                         </Link>
                         */}
                         {["home", "about", "skills", "portfolio", "contact"].map((element) => (
-                            <Link href={`#${element}`}>
+                            <Link 
+                            href={`#${element}`}
+                            key={element}
+                            >
                                 <li className='ml-10 text-sm uppercase hover:border-b'>{element}</li>
                             </Link>
                         ))}
@@ -114,7 +117,10 @@ const Navbar = () => {
                                 </Link>           
                                 */}
                                 {["home", "about", "skills", "portfolio", "contact"].map((element) => (
-                                    <Link href={`#${element}`}>
+                                    <Link 
+                                    href={`#${element}`}
+                                    key={element}
+                                    >
                                     <li className='py-2 text-sm'>{element}</li>
                                 </Link>
                                 ))}
