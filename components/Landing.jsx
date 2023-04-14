@@ -12,9 +12,9 @@ const Landing = () => {
     <div className='w-full h-screen text-center flex'>
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
             <div>
-              <p className='uppercase tracking-widest text-sm text-gray-600 mt-[37vh]'>You Created It. Now Let's Build It Together.</p>
+              <p className='uppercase tracking-widest text-sm text-gray-600 mt-[37vh]'>You Created It. Now Let&apos;s Build It Together.</p>
               <h1 className='py-4 text-gray-600'>
-                Hey! I'm <span className='text-[#602e9e]'><Link href="#about">Charles Mong</Link></span>,
+                Hey! I&apos;m <span className='text-[#602e9e]'><Link href="#about">Charles Mong</Link></span>,
               </h1>
               <h1 className='text-gray-600 pb-4'>
                 A Front-End Web Developer
@@ -23,7 +23,7 @@ const Landing = () => {
               I help businesses to build powerful, responsive front-end web applications that deliver outstanding user experiences. I am passionate about turning vision into impactful digital assets that add value, and solve problems creatively. 
               </p>
               <p className='-tracking-wide text-gray-600 max-w-[80%] m-auto'>
-                Get in touch, and let's get started on your next great idea...
+                Get in touch, and let&apos;s get started on your next great idea...
               </p>
               <div className='flex items-center justify-between max-w-[300px] m-auto py-4'>
               <div className='rounded-full shadow-md shadow-[#602e9e] p-3 cursor-pointer hover:scale-110 ease-in-out duration-300 text-blue-800'>
