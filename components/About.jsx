@@ -23,7 +23,7 @@ const About = () => {
             {/*Image*/}
             <div className='w-full max-w-xs h-auto m-auto shadow-lg shadow-[#602e9e] rounded-xl flex items-center justify-center p-2 hover:scale-105 ease-in-out duration-300'>
                 <Image 
-                src="/../public/assets/about-me-mugshot2.jpeg"
+                src="/assets/about-me-mugshot2.jpeg"
                 width={300} height={50}
                 className="rounded-xl"
                 alt="C. Mong portrait"

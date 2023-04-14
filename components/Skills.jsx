@@ -48,7 +48,7 @@ const Skills = () => {
                 skill="Next.js"
                 />                
                 <SkillCard 
-                src="/../public/assets/vercel.png"
+                src="/assets/vercel.png"
                 skill="Vercel"
                 />
             </div>

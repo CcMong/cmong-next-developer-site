@@ -21,7 +21,7 @@ const Navbar = () => {
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 {/*Logo */}
                 <Link href="/">
-                    <Image src="/../public/assets/cmong-logo2.png" 
+                    <Image src="/assets/cmong-logo2.png" 
                     alt="/" 
                     width="70" 
                     height="40"
@@ -81,7 +81,7 @@ const Navbar = () => {
                         <div className='flex w-full items-center justify-between'>
                             <Link href="/">
                                 <Image 
-                                src="/../public/assets/cmong-logo1.png" alt="/" 
+                                src="/cmong-logo1.png" alt="/" 
                                 width="50" height="30"
                                 className='hover:scale-110 ease-in-out duration-300 cursor-pointer'
                                 />
