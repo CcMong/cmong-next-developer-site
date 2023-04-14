@@ -9,10 +9,13 @@ const About = () => {
             <div className='col-span-2'>
                 <p className='uppercase text-lg tracking-widest text-[#602e9e]'>About</p>
                 <h3 className="py-4">A Little About Me...</h3>
-                <p className='py-2 text-gray-600'>I won't stoop to the tired cliché - "I'm not your average developer"... Admittedly, though, my journey to web development has been a fairly unusual one!</p>
+                <p className='py-2 text-gray-600'>I won't stoop to the tired "I'm not your average developer" cliché... Although, admittedly, my journey to web development has been a fairly unusual one!</p>
                 <p className='py-2 text-gray-600'>I graduated with a Master's Degree in Chemical Engineering from University of Cambridge (UK) in 2007, and I have worked within Banking and Finance, Oil and Gas, Business Consulting, and Agriculture.</p>
-                <p className='py-2 text-gray-600'>These varied roles all demanded an analytical approach to problem-solving, creative adaptability under pressure, exceptional communication skills, and a commitment to delivering high-quality work. I believe that my unique blend of skills and experiences is what sets me apart as a developer.</p>
-                <p className='py-2 text-gray-600'>I was introduced to programming in 2022 while working on an EdTech passion project, and I became irrevocably fascinated by the logical intricacy, potential impact and creative empowerment. I develop projects mainly in JavaScript, React.js and Next.js, with a keen interest in learning new technologies. 
+                <p className='py-2 text-gray-600'>These varied roles all demanded an analytical approach to problem-solving, creative adaptability under pressure, exceptional communication skills, and a commitment to delivering high-quality work. I believe that my unique blend of skills and experiences sets me apart as a developer.</p>
+                <p className='py-2 text-gray-600'>I was working on an EdTech passion project in 2022, and I became irrevocably fascinated by the logical intricacy, potential impact and creative empowerment of programming. That's when I got bitten by the bug. 
+                </p>
+                <p className='py-2 text-gray-600'>
+                I currently develop projects mainly in JavaScript, React.js and Next.js, with a keen interest in learning new technologies. 
                 </p>
                 <p className='py-2 text-gray-600'>My real passion is building an idea or vision into something that takes on a life of its own, with the ability to solve problems and impact lives.</p>
                 <p className='py-2 text-gray-600 cursor-pointer underline'>Take a look at some of my recent projects</p>
