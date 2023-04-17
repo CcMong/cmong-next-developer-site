@@ -71,17 +71,17 @@ const Navbar = () => {
 
             {/*Slide-out Nav Menu for Smaller Widths */} 
             {/*Initially create an overlay for the background when the hamburger menu is clicked. We want this to be hidden at medium screen widths and above */}
-            <div className={navMenu ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/60' : ""}>
+            <div className={navMenu ? 'md:hidden fixed right-0 top-0 w-full h-screen bg-black/60' : ""}>
                 {/*Menu Container*/}
-                <div className={navMenu ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] px-10 py-2 ease-in duration-500' 
-                : 'fixed left-[-200%] ease-in duration-300'}>
+                <div className={navMenu ? 'fixed right-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] px-10 py-2 ease-in-out duration-500' 
+                : 'fixed right-[-200%] ease-in-out duration-300'}>
                     {/*Menu Content*/}
                     <div>
                         {/*Menu Header */}
                         <div className='flex w-full items-center justify-between'>
                             <Link href="/">
                                 <Image 
-                                src="/cmong-logo1.png" alt="/" 
+                                src="/assets/cmong-logo1.png" alt="/" 
                                 width="50" height="30"
                                 className='hover:scale-110 ease-in-out duration-300 cursor-pointer'
                                 />
@@ -99,36 +99,20 @@ const Navbar = () => {
                         {/*Menu Content*/}
                         <div className='py-2 flex flex-col'>
                             <ul className='uppercase'>
-                                {/*
-                                <Link href="/">
-                                    <li className='py-4 text-sm'>Home</li>
-                                </Link>
-                                <Link href="/">
-                                    <li className='py-4 text-sm'>About</li>
-                                </Link>
-                                <Link href="/">
-                                    <li className='py-4 text-sm'>Skills</li>
-                                </Link>
-                                <Link href="/">
-                                    <li className='py-4 text-sm'>Portfolio</li>
-                                </Link>
-                                <Link href="/">
-                                    <li className='py-4 text-sm'>Contact</li>
-                                </Link>           
-                                */}
+                                
                                 {["home", "about", "skills", "portfolio", "contact"].map((element) => (
                                     <Link 
                                     href={`#${element}`}
                                     key={element}
                                     >
                                     <li className='py-2 text-sm'>{element}</li>
-                                </Link>
+                                    </Link>
                                 ))}
                                                  
                             </ul>
                             <div className='pt-5 border-t border-gray-300 my-4 text-center'>
                                 <p className='uppercase tracking-widest text-[#1f2397]'>Get in touch, and let&apos;s connect...</p>
-                                <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
+                                <div className='flex items-center justify-between my-4 w-full sm:w-[80%] m-auto'>
                                     <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-300'>
                                         <FaGithub />
                                     </div>
