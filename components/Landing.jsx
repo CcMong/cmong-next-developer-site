@@ -26,18 +26,18 @@ const Landing = () => {
                 Get in touch, and let&apos;s get started on your next great idea...
               </p>
               <div className='flex items-center justify-between max-w-[300px] m-auto py-4'>
-              <div className='rounded-full shadow-md shadow-[#602e9e] p-3 cursor-pointer hover:scale-110 ease-in-out duration-300 text-blue-800'>
-                <FaGithub />
-              </div>
-              <div className='rounded-full shadow-md shadow-[#602e9e] p-3 cursor-pointer hover:scale-110 ease-in-out duration-300 text-blue-800'>
-                <FaLinkedinIn />
-              </div>
-              <div className='rounded-full shadow-md shadow-[#602e9e] p-3 cursor-pointer hover:scale-110 ease-in-out duration-300 text-blue-800'>
-                <AiOutlineMail />
-              </div>
-              <div className='rounded-full shadow-md shadow-[#602e9e] p-3 cursor-pointer hover:scale-110 ease-in-out duration-300 text-blue-800'>
-                <BsFillPersonLinesFill />
-              </div>
+                <div className='rounded-full shadow-md shadow-[#602e9e] p-3 cursor-pointer hover:scale-110 ease-in-out duration-300 text-blue-800'>
+                  <FaGithub />
+                </div>
+                <div className='rounded-full shadow-md shadow-[#602e9e] p-3 cursor-pointer hover:scale-110 ease-in-out duration-300 text-blue-800'>
+                  <FaLinkedinIn />
+                </div>
+                <div className='rounded-full shadow-md shadow-[#602e9e] p-3 cursor-pointer hover:scale-110 ease-in-out duration-300 text-blue-800'>
+                  <AiOutlineMail />
+                </div>
+                <div className='rounded-full shadow-md shadow-[#602e9e] p-3 cursor-pointer hover:scale-110 ease-in-out duration-300 text-blue-800'>
+                  <BsFillPersonLinesFill />
+                </div>
 
 
               </div>

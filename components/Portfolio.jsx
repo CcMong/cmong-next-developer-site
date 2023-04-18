@@ -14,7 +14,7 @@ const Portfolio = () => {
             projectPageUrl: "/"
         },
         {
-            title: "TV Show / Movie Search and Suggestion App",
+            title: "TV / Movie Search and Suggestion App",
             bgImage: pmnImage,
             techSkills: "HTML, CSS, JavaScript, jQuery, Bootstrap, Server APIs",
             projectPageUrl: "/"
@@ -39,9 +39,10 @@ const Portfolio = () => {
         <div className='max-w-[1240px] mx-auto px-2 py-16'>
             <p className='uppercase text-lg tracking-widest text-[#602e9e]'>Portfolio</p>
             <h3 className="py-4">Some Recent Projects I Have Built</h3>
+            <p className='py-4'>Hover over each project to find out more.</p>
             {/*Container for the Projects */}
             <div className='grid md:grid-cols-2 gap-8'>
-
+                
                 {projects.map((element) => (
                     <Project
                     title={element.title}

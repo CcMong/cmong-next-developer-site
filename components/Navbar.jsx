@@ -15,6 +15,11 @@ const Navbar = () => {
         setNavMenu(!navMenu);
     }
 
+    // To manage state so that the navbar shadow only appears when the user starts scrolling
+
+    const [navShadow, setNavShadow] = useState(false);
+    
+
     return (
         <nav className='fixed w-full h-[30] shadow-xl z-[100] backdrop-blur-lg'>
             {/*Main Navigation Menu at Top of Page */}

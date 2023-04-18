@@ -9,14 +9,14 @@ const About = () => {
             <div className='col-span-2'>
                 <p className='uppercase text-lg tracking-widest text-[#602e9e]'>About</p>
                 <h3 className="py-4">A Little About Me...</h3>
-                <p className='py-2 text-gray-600 text-md'>I&apos;ll spare you the &ldquo;I&apos;m not your average developer&rdquo; cliché... Although, admittedly, my journey to web development has been a fairly unusual one!</p>
-                <p className='py-2 text-gray-600 text-md'>I graduated with a Master&apos;s Degree in Chemical Engineering from University of Cambridge (UK) in 2007, and I have worked within Banking and Finance, Oil and Gas, Business Consulting, and Agriculture.</p>
-                <p className='py-2 text-gray-600 text-md'>These industries all demanded similar skills - an analytical approach to problem-solving, creative adaptability under pressure, exceptional communication skills, and a commitment to delivering high-quality work. I believe that my unique blend of skills and experiences sets me apart as a developer.</p>
-                <p className='py-2 text-gray-600 text-md'>I've been intrigued by technology for a long time, but it was while working on an EdTech passion project in 2022 that I truly got bitten by the programming bug. I became irrevocably fascinated by how logical and productive it is, and how impactful and empowering it can be - and I've been enchanted ever since!
-                </p>
+                <p className='py-2 text-gray-600 text-md'>Hello, I&apos;m <span className='font-bold text-blue-700'>Charles Mong</span>, a <span className='font-bold text-blue-700'>front-end web developer</span> based near London, UK. I love to build applications that solve problems and create value-rich user experiences.</p>
                 <p className='py-2 text-gray-600 text-md'>
-                I currently develop projects mainly in JavaScript, React.js and Next.js, with a very keen interest in keeping abreast of the ever-changing landscape of front-end technologies.
-                </p>
+                I specialise in developing web applications mainly using <span className='font-bold text-blue-700'>JavaScript</span>, <span className='font-bold text-blue-700'>React.js</span> and <span className='font-bold text-blue-700'>Next.js</span>.
+                </p>                
+                <p className='py-2 text-gray-600 text-md'>I have a <span className='font-bold text-blue-700'>Master&apos;s Degree in Chemical Engineering</span> from University of Cambridge (UK), and I have worked within Banking and Finance, Oil and Gas, Business Consulting, and Agriculture.</p>
+                <p className='py-2 text-gray-600 text-md'>These industries all demand the same things - analytical problem-solving skills, creative adaptability under pressure, exceptional communication and organisational skills, and a commitment to delivering high-quality work. I believe that my unique blend of skills and experiences sets me apart as a developer.</p>
+                <p className='py-2 text-gray-600 text-md'>I&apos;ve been intrigued by technology for a while, but I truly got bitten by the programming bug while working on an EdTech passion project in 2022. I love how logical and productive it is, and how impactful and empowering it can be - and I've been enchanted ever since! I maintain a very keen interest in the ever-changing landscape of front-end technologies.
+                </p>                
                 <p className='py-2 text-gray-600 text-md'>My real passion lies in building an idea or vision into something that takes on a life of its own, with the capacity to solve problems and impact people.</p>
                 <p className='py-2 text-gray-600 text-sm cursor-pointer underline'>Take a look at some of my recent projects</p>
             </div>
