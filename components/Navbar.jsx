@@ -32,10 +32,7 @@ const Navbar = () => {
         }
         // Event listener to detect user scroll
         window.addEventListener("scroll", handleNavShadow)
-    }, [])
-
-
-    
+    }, [])    
 
 
     return (
@@ -57,26 +54,11 @@ const Navbar = () => {
                 <div>
                     {/*Tailwind is mobile first. So the nav links will be hidden at small screen widths and visible from medium screens and up */}
                     <ul className='hidden md:flex'>
-                        {/*
-                        <Link href="/">
-                            <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
-                        </Link>
-                        <Link href="/">
-                            <li className='ml-10 text-sm uppercase hover:border-b'>About</li>
-                        </Link>
-                        <Link href="/">
-                            <li className='ml-10 text-sm uppercase hover:border-b'>Skills</li>
-                        </Link>
-                        <Link href="/">
-                            <li className='ml-10 text-sm uppercase hover:border-b'>Portfolio</li>
-                        </Link>
-                        <Link href="/">
-                            <li className='ml-10 text-sm uppercase hover:border-b'>Contact</li>
-                        </Link>
-                        */}
+                        
                         {["home", "about", "skills", "portfolio", "contact"].map((element) => (
                             <Link 
                             href={`/#${element}`}
+                            scroll={false}
                             key={element}
                             >
                                 <li className='ml-10 text-sm uppercase hover:border-b'>{element}</li>
@@ -101,7 +83,7 @@ const Navbar = () => {
                     {/*Menu Content*/}
                     <div>
                         {/*Menu Header */}
-                        <div className='flex w-full items-center justify-between'>
+                        <div className='flex w-full items-center justify-between' onClick={handleNavMenu}>
                             <Link href="/">
                                 <Image 
                                 src="/assets/cmong-logo1.png" alt="/" 
@@ -115,6 +97,7 @@ const Navbar = () => {
                                 <AiOutlineClose />
                             </div>              
                         </div>
+
                         <div className='border-b border-gray-300 my-4 text-center'>
                             <p className="w-[100%] md:w-[90%] py-1 mb-[8px] text-[#1f2397]">Let&apos;s build your incredible vision together</p>
                         </div>
@@ -123,19 +106,24 @@ const Navbar = () => {
                         <div className='py-2 flex flex-col'>
                             <ul className='uppercase'>
                                 
+                                {/*Wrapped these links in a div which will change the navMenu state to false when any link is clicked, to make the slide out menu disappear */}
                                 {["home", "about", "skills", "portfolio", "contact"].map((element) => (
-                                    <Link 
-                                    href={`/#${element}`}
-                                    key={element}
-                                    >
-                                    <li className='py-2 text-sm'>{element}</li>
-                                    </Link>
+                                    <div onClick={handleNavMenu}>
+                                        <Link 
+                                        href={`/#${element}`}
+                                        scroll={false}
+                                        key={element}
+                                        >
+                                        <li className='py-2 text-sm'>{element}</li>
+                                        </Link>
+                                    </div>
                                 ))}
                                                  
                             </ul>
+
                             <div className='pt-5 border-t border-gray-300 my-4 text-center'>
                                 <p className='uppercase tracking-widest text-[#1f2397]'>Get in touch, and let&apos;s connect...</p>
-                                <div className='flex items-center justify-between my-4 w-full sm:w-[80%] m-auto'>
+                                <div className='flex items-center justify-between my-4 w-full sm:w-[80%] m-auto' onClick={handleNavMenu}>
                                     <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-300'>
                                         <FaGithub />
                                     </div>

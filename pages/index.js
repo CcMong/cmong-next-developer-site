@@ -7,6 +7,7 @@ import About from '../components/About';
 import Skills from '../components/Skills';
 import Portfolio from '../components/Portfolio';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,13 +18,12 @@ export default function Home() {
         <title>Charles Mong | Front-End Web Developer</title>
         <meta name="description" content="web development, web design, content creation, and SEO services" />
         <link rel="icon" href="#"></link>
-      </Head>
-      <Navbar />
+      </Head>      
       <Landing />
       <About />
       <Skills />
       <Portfolio />
-      <Contact />
+      <Contact />    
      
     </div>
   )
