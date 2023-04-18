@@ -35,7 +35,7 @@ const Portfolio = () => {
     ]
 
   return (
-    <div className='w-full'>
+    <div id="portfolio" className='w-full'>
         <div className='max-w-[1240px] mx-auto px-2 py-16'>
             <p className='uppercase text-lg tracking-widest text-[#602e9e]'>Portfolio</p>
             <h3 className="py-4">Some Recent Projects I Have Built</h3>

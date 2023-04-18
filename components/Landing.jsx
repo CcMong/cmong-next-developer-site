@@ -9,7 +9,7 @@ const Landing = () => {
 
   return (
 
-    <div className='w-full h-screen text-center flex'>
+    <div id="home" className='w-full h-screen text-center flex'>
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
             <div>
               <p className='uppercase tracking-widest text-sm text-gray-600 mt-[37vh]'>You Created It. Now Let&apos;s Build It Together.</p>

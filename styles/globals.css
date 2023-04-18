@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/*Apply smooth scroll to the entire html*/
+
+html {
+  scroll-behavior: smooth;
+}
+
 /*Baseline Styles
 ------------------*/
 

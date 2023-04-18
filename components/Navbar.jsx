@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
@@ -18,10 +18,28 @@ const Navbar = () => {
     // To manage state so that the navbar shadow only appears when the user starts scrolling
 
     const [navShadow, setNavShadow] = useState(false);
+
+    // Implement a useEffect so that this comes into effect only once when the page is loaded
+
+    useEffect(() => {
+        const handleNavShadow = () => {
+            // If the user scrolls 90 pixels or more, we want the shadow to take effect
+            if(window.scrollY >= 90) {
+                setNavShadow(true)
+            } else {
+                setNavShadow(false)
+            }
+        }
+        // Event listener to detect user scroll
+        window.addEventListener("scroll", handleNavShadow)
+    }, [])
+
+
     
 
+
     return (
-        <nav className='fixed w-full h-[30] shadow-xl z-[100] backdrop-blur-lg'>
+        <nav id="navbar" className={navShadow ? 'fixed w-full h-[30] shadow-xl z-[100] backdrop-blur-lg' : 'fixed w-full h-[30] z-[100] backdrop-blur-lg'}>
             {/*Main Navigation Menu at Top of Page */}
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 {/*Logo */}
@@ -58,7 +76,7 @@ const Navbar = () => {
                         */}
                         {["home", "about", "skills", "portfolio", "contact"].map((element) => (
                             <Link 
-                            href={`#${element}`}
+                            href={`/#${element}`}
                             key={element}
                             >
                                 <li className='ml-10 text-sm uppercase hover:border-b'>{element}</li>
@@ -107,7 +125,7 @@ const Navbar = () => {
                                 
                                 {["home", "about", "skills", "portfolio", "contact"].map((element) => (
                                     <Link 
-                                    href={`#${element}`}
+                                    href={`/#${element}`}
                                     key={element}
                                     >
                                     <li className='py-2 text-sm'>{element}</li>
