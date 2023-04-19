@@ -11,7 +11,7 @@ const ProjectDesc = ({ projectTitle, techSummary, projectImg, projectName, proje
         {/*Banner section*/}
         <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
             {/*Overlay*/}
-            <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/60 z-10'/>
+            <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10'/>
             <Image 
             className='absolute z-1 h-[30vh] lg:h-[40vh]'
             src={projectImg} alt={projectTitle}

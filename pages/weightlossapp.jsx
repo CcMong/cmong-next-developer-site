@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectDesc from '../components/ProjectDesc';
-import movieImage from "../public/assets/pmn-screenshot.png";
+import wwlImage from "../public/assets/wwl-demo-2.jpg";
 
 const weightlossapp = () => {
 
@@ -23,7 +23,7 @@ const weightlossapp = () => {
     const weightlossAppInfo = {
         projectTitle: "Bodyweight Weight-Loss and Fitness App",
         techSummary: "React JS / React-Bootstrap / Netlify",
-        projectImg: movieImage,
+        projectImg: wwlImage,
         projectName: '"Weightless Weightloss" Fitness App',
         projectDescription: projectDescription,
         technologies: ["JavaScript", "React JS", "React-Bootstrap", "Netlify", "Rapid API", "Beautiful-DnD", "Countdown-Circle-Timer", "React-Slick", "React-Toastify"],

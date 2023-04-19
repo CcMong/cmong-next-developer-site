@@ -1,13 +1,10 @@
-import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import Head from 'next/head';
-import Navbar from '../components/Navbar';
 import Landing from '../components/Landing';
 import About from '../components/About';
 import Skills from '../components/Skills';
 import Portfolio from '../components/Portfolio';
 import Contact from '../components/Contact';
-import Footer from '../components/Footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +14,8 @@ export default function Home() {
       <Head>
         <title>Charles Mong | Front-End Web Developer</title>
         <meta name="description" content="web development, web design, content creation, and SEO services" />
-        <link rel="icon" href="#"></link>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>      
       <Landing />
       <About />

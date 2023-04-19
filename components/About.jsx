@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import Link from 'next/link';
 
 const About = () => {
   return (
@@ -18,7 +19,9 @@ const About = () => {
                 <p className='py-2 text-gray-600 text-md'>I&apos;ve been intrigued by technology for a while, but I truly got bitten by the programming bug while working on an EdTech passion project in 2022. I love how logical and productive it is, and how impactful and empowering it can be - and I've been enchanted ever since! I maintain a very keen interest in the ever-changing landscape of front-end technologies.
                 </p>                
                 <p className='py-2 text-gray-600 text-md'>My real passion lies in building an idea or vision into something that takes on a life of its own, with the capacity to solve problems and impact people.</p>
-                <p className='py-2 text-gray-600 text-sm cursor-pointer underline'>Take a look at some of my recent projects</p>
+                <Link href="/#portfolio" scroll={false}>
+                  <p className='py-2 text-gray-600 text-sm cursor-pointer underline'>Take a look at some of my recent projects</p>
+                </Link>
             </div>
             {/*Image*/}
             <div className='w-full max-w-xs h-auto m-auto shadow-lg shadow-[#602e9e] rounded-xl flex items-center justify-center p-2 hover:scale-105 ease-in-out duration-300'>

@@ -8,9 +8,15 @@ const Layout = ({ children }) => {
 
   return (
     <div className='content'>
-        <Navbar />
-        { children }
-        <Footer />
+      <Head>
+        <title>Charles Mong | Front-End Web Developer</title>
+        <meta name="description" content="web development, web design, content creation, and SEO services" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Navbar />
+      { children }
+      <Footer />
     </div>
     
   )

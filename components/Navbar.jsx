@@ -42,7 +42,7 @@ const Navbar = () => {
     const [darkLogo, setDarkLogo] = useState(false);
     const router = useRouter();
 
-    // Use a different colour for the navbar links when we route to the project pages
+    // Use a different colour for the navbar links, background and logo when we route to the project pages
 
     useEffect(() => {
 
@@ -51,7 +51,7 @@ const Navbar = () => {
             router.asPath === "/movieapp" ||
             router.asPath === "/weatherapp"
         ) {
-            setNavBgShade("#000000");
+            setNavBgShade("#070707");
             setNavLinkColor("#f8f8f8");
             setDarkLogo(true);
         } else {
@@ -70,7 +70,7 @@ const Navbar = () => {
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 {/*Logo */}
                 <Link href="/">
-                    <Image src={!darkLogo ? "/assets/cmong-logo2.png" : "/assets/dark-bg-logo.png"} 
+                    <Image src={!darkLogo ? "/assets/cmong-logo2.png" : "/assets/dark-bg-logo2.png"} 
                     alt="/" 
                     width="70" 
                     height="40"
@@ -129,7 +129,7 @@ const Navbar = () => {
                             </div>              
                         </div>
 
-                        <div className='border-b border-gray-300 my-4 text-center text-[#0000007a]'>
+                        <div className='border-b border-gray-300 my-4 text-center'>
                             <p className="w-[100%] md:w-[90%] py-1 mb-[8px] text-[#1f2397]">Let&apos;s build your incredible vision together</p>
                         </div>
 
