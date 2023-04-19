@@ -3,9 +3,9 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div id="about" className="w-full md:h-screen p-4 flex items-center py-16">
+    <div id="about" className="w-full p-4 flex items-center py-16"> {/*Removed md:h-screen class */}
         {/*Main container which will be a grid*/}
-        <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
+        <div className='max-w-[1240px] h-full m-auto md:grid grid-cols-3 gap-8'>
             <div className='col-span-2'>
                 <p className='uppercase text-lg tracking-widest text-[#602e9e]'>About</p>
                 <h3 className="py-4">A Little About Me...</h3>

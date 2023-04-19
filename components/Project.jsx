@@ -8,7 +8,7 @@ const Project = ( {title, bgImage, techSkills, projectPageUrl } ) => {
         <Image className="rounded-xl group-hover:opacity-10" src={bgImage} alt="/" />
         {/*Use position absolute for the overlay elements and centre them. Keep them hidden unless hovered*/}
         <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-            <h4 className='text-2xl text-white text-center tracking-wider '>{title}</h4>
+            <h4 className='text-2xl text-white text-center -tracking-wider '>{title}</h4>
             <p className='pb-4 pt-2 text-white text-center'>{techSkills}</p>
             {/*Button*/}
             <Link href={projectPageUrl}>

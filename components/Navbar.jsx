@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
 
@@ -34,14 +35,42 @@ const Navbar = () => {
         window.addEventListener("scroll", handleNavShadow)
     }, [])    
 
+    // To manage nav background state, so that it is darker for the project description pages with dark banners
+
+    const [navBgShade, setNavBgShade] = useState("");
+    const [navLinkColor, setNavLinkColor] = useState("");
+    const [darkLogo, setDarkLogo] = useState(false);
+    const router = useRouter();
+
+    // Use a different colour for the navbar links when we route to the project pages
+
+    useEffect(() => {
+
+        if(
+            router.asPath === "/weightlossapp" || 
+            router.asPath === "/movieapp" ||
+            router.asPath === "/weatherapp"
+        ) {
+            setNavBgShade("#000000");
+            setNavLinkColor("#f8f8f8");
+            setDarkLogo(true);
+        } else {
+            setNavBgShade("");
+            setNavLinkColor("");
+            setDarkLogo(false);
+        }
+    }, [router])
+
 
     return (
-        <nav id="navbar" className={navShadow ? 'fixed w-full h-[30] shadow-xl z-[100] backdrop-blur-lg' : 'fixed w-full h-[30] z-[100] backdrop-blur-lg'}>
+        <nav id="navbar" 
+        style={{backgroundColor: `${navBgShade}`}}
+        className={navShadow ? 'fixed w-full h-[30] shadow-xl z-[100] backdrop-blur-lg' : 'fixed w-full h-[30] z-[100] backdrop-blur-lg'}>
             {/*Main Navigation Menu at Top of Page */}
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 {/*Logo */}
                 <Link href="/">
-                    <Image src="/assets/cmong-logo2.png" 
+                    <Image src={!darkLogo ? "/assets/cmong-logo2.png" : "/assets/dark-bg-logo.png"} 
                     alt="/" 
                     width="70" 
                     height="40"
@@ -53,7 +82,8 @@ const Navbar = () => {
                 {/*Navigation Links, Close Icon and Hamburger Icon */}
                 <div>
                     {/*Tailwind is mobile first. So the nav links will be hidden at small screen widths and visible from medium screens and up */}
-                    <ul className='hidden md:flex'>
+                    <ul style={{color: `${navLinkColor}`}}
+                    className='hidden md:flex'>
                         
                         {["home", "about", "skills", "portfolio", "contact"].map((element) => (
                             <Link 
@@ -66,7 +96,8 @@ const Navbar = () => {
                         ))}
                         
                     </ul>
-                    <div onClick={handleNavMenu} className='md:hidden cursor-pointer text-[#602e9e]'>
+                    <div style={{color: `${navLinkColor}`}}
+                    onClick={handleNavMenu} className='md:hidden cursor-pointer text-[#602e9e]'>
                         <AiOutlineMenu 
                         size={35}
                         className="hover:scale-110 ease-in-out duration-300" />
@@ -98,7 +129,7 @@ const Navbar = () => {
                             </div>              
                         </div>
 
-                        <div className='border-b border-gray-300 my-4 text-center'>
+                        <div className='border-b border-gray-300 my-4 text-center text-[#0000007a]'>
                             <p className="w-[100%] md:w-[90%] py-1 mb-[8px] text-[#1f2397]">Let&apos;s build your incredible vision together</p>
                         </div>
 

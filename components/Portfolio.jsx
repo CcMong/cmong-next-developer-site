@@ -1,5 +1,7 @@
 import React from 'react';
 import pmnImage from "../public/assets/pmn-screenshotModal.png";
+import wwlCover from "../public/assets/wwl-cover2.jpg";
+import pmnCover from "../public/assets/pmn-cover.jpg";
 import Project from './Project';
 
 const Portfolio = () => {
@@ -8,15 +10,15 @@ const Portfolio = () => {
         {
             id: 1,
             title: "Bodyweight Exercise and Fitness App",
-            bgImage: pmnImage,
-            techSkills: "HTML, CSS, JavaScript, React, React-Bootstrap, Server APIs",
+            bgImage: wwlCover,
+            techSkills: "JavaScript, React, React-Bootstrap, Server APIs",
             projectPageUrl: "weightlossapp"
         },
         {
             id: 2,
-            title: "TV / Movie Search and Suggestion App",
-            bgImage: pmnImage,
-            techSkills: "HTML, CSS, JavaScript, jQuery, Bootstrap, Server APIs",
+            title: "Streaming Platform Aggregation App",
+            bgImage: pmnCover,
+            techSkills: "JavaScript, jQuery, Bootstrap, Server APIs",
             projectPageUrl: "movieapp"
         },
         {

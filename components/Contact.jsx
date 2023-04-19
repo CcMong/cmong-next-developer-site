@@ -9,7 +9,7 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const Contact = () => {
   return (
-    <div id="contact" className='w-full lg:h-screen '>
+    <div id="contact" className='w-full'> {/*Removed lg:h-screen class, otherwise the footer infiltrates the contact page content */}
         <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
             <p className='uppercase text-lg tracking-widest text-[#602e9e]'>Contact</p>
             <h3 className='py-4'>Get In Touch - I'd love to hear from you!</h3>
