@@ -7,7 +7,7 @@ const movieapp = () => {
     const projectDescription = 
     <div>
         <p className='py-2'>
-            The "Perfect Movie Night" App brings together the movies and TV shows from ten of the biggest streaming platforms, all in one place. It saves the user the time and hassle of scrolling through different options on different platforms to see what they would like to watch. It also serves as a suggestive app, potentially alerting the user to matching interests that they otherwise would not have discovered.
+            The &ldquo;Perfect Movie Night&rdquo; App brings together the movies and TV shows from ten of the biggest streaming platforms, all in one place. It saves the user the time and hassle of scrolling through different options on different platforms to see what they would like to watch. It also serves as a suggestive app, potentially alerting the user to matching interests that they otherwise would not have discovered.
         </p>
         <p className='py-2'>
             The user is able to choose a streaming platform, as well as type (movie or TV) and genre preferences, and will receive recommendations on what to watch. Clicking on a movie/show poster provides more information, and the user can add it to a watchlist for later access. Items in the watchlist can easily be accessed, added to or removed as desired by the user.

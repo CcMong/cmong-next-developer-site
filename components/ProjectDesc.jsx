@@ -58,7 +58,9 @@ const ProjectDesc = ({ projectTitle, techSummary, projectImg, projectName, proje
                     {/*Using the grid on the technology list container so that the list spans the width and displays multiple content in a row, rather than just being a column */}
                     <div className='grid grid-cols-3 md:grid-cols-1'>
                         {technologies.map((tech) => (
-                            <p className=' text-gray-600 py-2 flex items-center text-sm mx-1 -tracking-wide'><RiRadioButtonLine className='pr-1 text-lg' />{tech}</p>
+                            <p 
+                            key={tech}
+                            className=' text-gray-600 py-2 flex items-center text-sm mx-1 -tracking-wide'><RiRadioButtonLine className='pr-1 text-lg' />{tech}</p>
                         ))}
                     </div>    
                     

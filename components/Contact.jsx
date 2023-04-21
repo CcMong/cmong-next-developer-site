@@ -12,7 +12,7 @@ const Contact = () => {
     <div id="contact" className='w-full'> {/*Removed lg:h-screen class, otherwise the footer infiltrates the contact page content */}
         <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
             <p className='uppercase text-lg tracking-widest text-[#602e9e]'>Contact</p>
-            <h3 className='py-4'>Get In Touch - I'd love to hear from you!</h3>
+            <h3 className='py-4'>Get In Touch - I&apos;d love to hear from you!</h3>
 
             <div className='grid lg:grid-cols-5 gap-8'>
 
@@ -27,7 +27,7 @@ const Contact = () => {
                             <p className='font-bold pt-2'>Front-End Developer</p>
                             <p className='-tracking-wide pt-4'>I am available for freelance and full-time opportunities.</p>
                             <p className='-tracking-wide py-2'>
-                            If you would like to work with me, or if you have any questions or enquiries, get in touch and let's have a chat.
+                            If you would like to work with me, or if you have any questions or enquiries, get in touch and let&apos;s have a chat.
                             </p>
                         </div>
                         <div>

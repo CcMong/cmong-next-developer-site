@@ -7,10 +7,10 @@ const weightlossapp = () => {
     const projectDescription = 
     <div>
         <p className='py-2'>
-            The "Weightless Weightloss" App helps users to achieve their fitness goals through simple and effective bodyweight exercises, without the need for any gym equipment or weights.
+            The &ldquo;Weightless Weightloss&rdquo; App helps users to achieve their fitness goals through simple and effective bodyweight exercises, without the need for any gym equipment or weights.
         </p>
         <p className='py-2'>
-            The user can jump right into a quick workout, or can search from over 1300 exercises to build a custom workout session. Exercises can also be saved to "Favourites" for easy access.
+            The user can jump right into a quick workout, or can search from over 1300 exercises to build a custom workout session. Exercises can also be saved to &ldquo;Favourites&rdquo; for easy access.
         </p>
         <p className='py-2'>
             Exercises can be reordered on a list by drag-and-drop before the workout begins. During the workout, the user is shown the correct exercise technique throughout and, by default, will have 30 seconds per exercise with 10 seconds rest in between. These times can be increased or decreased in 1- or 10-second steps.
